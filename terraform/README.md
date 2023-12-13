@@ -20,7 +20,6 @@ We're using a github action to automatically run Terraform Docs each time a pull
 
 | Name | Type |
 |------|------|
-| [azurerm_management_lock.rust_rg](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/management_lock) | resource |
 | [azurerm_resource_group.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/resource_group) | resource |
 
 ## Inputs

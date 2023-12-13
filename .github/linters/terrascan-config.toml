@@ -1,0 +1,4 @@
+[rules]
+    skip-rules = [
+        "AC_AZURE_0389"
+    ]

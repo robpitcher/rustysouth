@@ -1,8 +1,7 @@
 ---
 name: "Terraform Destroy"
 
-on:
-  workflow_dispatch
+on: workflow_dispatch
 
 # These environment variables are used by the terraform azure provider
 env:

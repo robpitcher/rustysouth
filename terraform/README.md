@@ -21,7 +21,6 @@ We're using a github action to automatically run Terraform Docs each time a pull
 | Name | Type |
 |------|------|
 | [azurerm_resource_group.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/resource_group) | resource |
-| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/data-sources/client_config) | data source |
 
 ## Inputs
 

@@ -1,4 +1,7 @@
-resource "azurerm_resource_group" "baseRG" {
+resource "azurerm_resource_group" "rust" {
   name     = var.projectName
-  location = "East US"
+  location = var.location
 }
+
+# For keyvault to provide tenant id
+data "azurerm_client_config" "current" {}

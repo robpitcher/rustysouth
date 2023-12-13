@@ -3,17 +3,25 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "3.75.0"
+      version = "3.83.0"
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-terraformstate-mgmt"
-    storage_account_name = "rptfstate"
-    container_name       = "states"
-    key                  = "template.tfstate"
+    resource_group_name  = "rg-terraform-app"
+    storage_account_name = "rptfstate02"
+    container_name       = "tfstates"
+    key                  = "rust.tfstate"
   }
 }
 
 provider "azurerm" {
-  features {}
+  features {
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+    key_vault {
+      purge_soft_delete_on_destroy    = true
+      recover_soft_deleted_key_vaults = true
+    }
+  }
 }

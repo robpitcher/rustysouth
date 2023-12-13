@@ -1,0 +1,2 @@
+projectName = "rust"
+location = "eastus"

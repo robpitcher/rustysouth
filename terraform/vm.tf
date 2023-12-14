@@ -34,7 +34,7 @@ resource "azurerm_linux_virtual_machine" "rust" {
   name                = var.projectName
   resource_group_name = azurerm_resource_group.rust.name
   location            = azurerm_resource_group.rust.location
-  size                = "Standard_D4as_v5"
+  size                = "Standard_D4s_v3"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.rust.id,

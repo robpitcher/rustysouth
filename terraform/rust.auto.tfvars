@@ -1,2 +1,2 @@
 projectName = "rust"
-location = "eastus"
+location    = "eastus"

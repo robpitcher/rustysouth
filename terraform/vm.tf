@@ -5,10 +5,10 @@ resource "azurerm_network_interface" "rust" {
   resource_group_name = azurerm_resource_group.rust.name
 
   ip_configuration {
-    name                            = "internal"
-    subnet_id                       = azurerm_subnet.rust.id
-    private_ip_address_allocation   = "Dynamic"
-    public_ip_address_id            = azurerm_public_ip.rust.id
+    name                          = "internal"
+    subnet_id                     = azurerm_subnet.rust.id
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = azurerm_public_ip.rust.id
   }
 
   enable_accelerated_networking = true

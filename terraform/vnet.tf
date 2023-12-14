@@ -18,13 +18,13 @@ resource "azurerm_network_security_group" "rust" {
   resource_group_name = azurerm_resource_group.rust.name
 
   security_rule {
-    name                       = "RustTCP"
-    priority                   = 110
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "Tcp"
-    source_port_range          = "*"
-    destination_port_ranges     = [
+    name              = "RustTCP"
+    priority          = 110
+    direction         = "Inbound"
+    access            = "Allow"
+    protocol          = "Tcp"
+    source_port_range = "*"
+    destination_port_ranges = [
       "28016",
       "28082"
     ]
@@ -33,13 +33,13 @@ resource "azurerm_network_security_group" "rust" {
   }
 
   security_rule {
-    name                       = "RustUDP"
-    priority                   = 105
-    direction                  = "Inbound"
-    access                     = "Allow"
-    protocol                   = "Udp"
-    source_port_range          = "*"
-    destination_port_ranges     = [
+    name              = "RustUDP"
+    priority          = 105
+    direction         = "Inbound"
+    access            = "Allow"
+    protocol          = "Udp"
+    source_port_range = "*"
+    destination_port_ranges = [
       "28015",
       "28017"
     ]

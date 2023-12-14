@@ -39,7 +39,7 @@ resource "azurerm_linux_virtual_machine" "rust" {
   network_interface_ids = [
     azurerm_network_interface.rust.id,
   ]
-  priority = "Spot"
+  priority        = "Spot"
   eviction_policy = "Deallocate"
 
   admin_ssh_key {

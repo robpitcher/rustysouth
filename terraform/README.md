@@ -26,6 +26,8 @@ We're using a github action to automatically run Terraform Docs each time a pull
 | [azurerm_backup_protected_vm.vm1](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/backup_protected_vm) | resource |
 | [azurerm_linux_virtual_machine.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/linux_virtual_machine) | resource |
 | [azurerm_log_analytics_workspace.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/log_analytics_workspace) | resource |
+| [azurerm_maintenance_assignment_virtual_machine.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/maintenance_assignment_virtual_machine) | resource |
+| [azurerm_maintenance_configuration.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/maintenance_configuration) | resource |
 | [azurerm_network_interface.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_interface) | resource |
 | [azurerm_network_security_group.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/network_security_group) | resource |
 | [azurerm_public_ip.rust](https://registry.terraform.io/providers/hashicorp/azurerm/3.83.0/docs/resources/public_ip) | resource |

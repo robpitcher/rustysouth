@@ -65,3 +65,9 @@ resource "azurerm_backup_protected_vm" "vm1" {
   source_vm_id        = azurerm_linux_virtual_machine.rust.id
   backup_policy_id    = azurerm_backup_policy_vm.rust.id
 }
+
+resource "azurerm_maintenance_assignment_virtual_machine" "rust" {
+  location                     = azurerm_resource_group.rust.location
+  maintenance_configuration_id = azurerm_maintenance_configuration.rust.id
+  virtual_machine_id           = azurerm_linux_virtual_machine.rust.id
+}

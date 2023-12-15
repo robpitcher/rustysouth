@@ -20,5 +20,6 @@ resource "azurerm_maintenance_configuration" "rust" {
             "Security"
         ]
     }
+    reboot = "IfRequired"
   }
 }

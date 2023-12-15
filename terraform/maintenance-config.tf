@@ -1,9 +1,9 @@
 
 resource "azurerm_maintenance_configuration" "rust" {
-  name                = "rust-mc"
-  resource_group_name = azurerm_resource_group.rust.name
-  location            = azurerm_resource_group.rust.location
-  scope               = "InGuestPatch"
+  name                     = "rust-mc"
+  resource_group_name      = azurerm_resource_group.rust.name
+  location                 = azurerm_resource_group.rust.location
+  scope                    = "InGuestPatch"
   in_guest_user_patch_mode = "User"
 
   window {
@@ -15,10 +15,10 @@ resource "azurerm_maintenance_configuration" "rust" {
 
   install_patches {
     linux {
-        classifications_to_include = [
-            "Critical",
-            "Security"
-        ]
+      classifications_to_include = [
+        "Critical",
+        "Security"
+      ]
     }
     reboot = "IfRequired"
   }

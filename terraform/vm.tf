@@ -57,10 +57,10 @@ resource "azurerm_linux_virtual_machine" "rust" {
     version   = "latest"
   }
 
-  patch_assessment_mode = "AutomaticByPlatform"
-  patch_mode = "AutomaticByPlatform"
-  provision_vm_agent = true
-  reboot_setting = "IfRequired"
+  patch_assessment_mode                                  = "AutomaticByPlatform"
+  patch_mode                                             = "AutomaticByPlatform"
+  provision_vm_agent                                     = true
+  reboot_setting                                         = "IfRequired"
   bypass_platform_safety_checks_on_user_schedule_enabled = true
 }
 
